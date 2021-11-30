@@ -1,4 +1,4 @@
-## Crucial Framework documentation
+## Crucial Framework Documentation
 
 ### Framework Functions (Client)
 ```markdown
