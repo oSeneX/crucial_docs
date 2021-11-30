@@ -2,12 +2,11 @@
 
 ### Framework Functions
 
-####Client:
 ```markdown
-- 
-```
-####Server:
-```markdown
+**Client:**
+
+
+**Server:**
 local player = exports['cc_base']:GetPlayer(source)
 player.setdeathStatus(status) -- 0 = elävä 1 = kuollut
 player.getdeathStatus() 
@@ -37,13 +36,17 @@ player.getItemDurability(item) -- Max durability
 player.isItemUsable(item)
 ```
 
-####Callbacks:
+### Callbacks:
 ```markdown
 **Client:**
-exports['cc_base']:TriggerServerCallback('eventName', function() end)
+exports['cc_base']:TriggerServerCallback('eventName', function() 
+
+end)
 
 **Server:**
-exports['cc_base']:RegisterCallback('eventName', function(source, cb) end)
+exports['cc_base']:RegisterCallback('eventName', function(source, cb) 
+
+end)
 ```
 
 ### Framework Modules
