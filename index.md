@@ -1,12 +1,12 @@
 ## Crucial Framework documentation
 
-### Framework Functions
-
+### Framework Functions (Client)
 ```markdown
-**Client:**
+-
+```
 
-
-**Server:**
+### Framework Functions (Server)
+```markdown
 local player = exports['cc_base']:GetPlayer(source)
 player.setdeathStatus(status) -- 0 = elävä 1 = kuollut
 player.getdeathStatus() 
@@ -36,7 +36,7 @@ player.getItemDurability(item) -- Max durability
 player.isItemUsable(item)
 ```
 
-### Callbacks:
+### Framework Functions (Callbacks)
 ```markdown
 **Client:**
 exports['cc_base']:TriggerServerCallback('eventName', function() 
