@@ -58,6 +58,6 @@ exports['cc_modules']:InsertBlip(name, scale, sprite, color, shortrange, coords)
 Esimerkki: exports['cc_modules']:InsertBlip('Kauppa', 0.6, 59, 0, true, v.sij)
 ```
 
-### Framework Modules (Client)
+### Framework Modules (Server)
 ```markdown
 ```
