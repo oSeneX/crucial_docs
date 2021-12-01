@@ -60,4 +60,6 @@ Esimerkki: exports['cc_modules']:InsertBlip('Kauppa', 0.6, 59, 0, true, v.sij)
 
 ### Framework Modules (Server)
 ```markdown
+exports['cc_logit']:logToDC(user, title, desc, webhook, color)
+Esimerkki: exports['cc_logit']:logToDC('Yhteydet', 'Yhdistetään...', 'Pelaaja: **'..name..'**\nSteam: **'..steamid..'** \nRockstar License: **'..license..'** \nIP: **'..ip..'\n**Discord: **'..discord..'**', Logs.Yhteydet, 15105570)
 ```
