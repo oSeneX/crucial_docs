@@ -1,10 +1,5 @@
 ## Crucial Framework Documentation
 
-### Framework Functions (Client)
-```markdown
--
-```
-
 ### Framework Functions (Server)
 ```markdown
 local player = exports['cc_base']:GetPlayer(source)
