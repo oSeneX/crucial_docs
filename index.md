@@ -16,6 +16,9 @@ player.giveJob()
 player.getDuty()
 player.getIdentifier()
 player.getGroup()
+player.getPlayerFirstName()
+player.getPlayerLastName()
+player.hasItem(item)
 player.getBank() -- Pankkilillä oleva summa
 player.getAccountNumber() -- Pankkitilin tilinumero
 player.getSecondaryBank() -- Säästötilillä oleva summa
