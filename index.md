@@ -3,6 +3,7 @@
 ### Framework Functions (Server)
 ```markdown
 local player = exports['cc_base']:GetPlayer(source)
+
 player.getdeathStatus() 
 player.getPos() 
 player.getChar() -- Valittu hahmo (1 & 2)
