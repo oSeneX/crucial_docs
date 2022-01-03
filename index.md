@@ -14,14 +14,18 @@ player.getGroup()
 player.getPlayerFirstName()
 player.getPlayerLastName()
 player.hasItem(item)
+player.setdeathStatus(status) -- 0 = elävä 1 = kuollut
+player.giveGroup(group)
+
+**Currency**
 player.getBank() -- Pankkilillä oleva summa
 player.getAccountNumber() -- Pankkitilin tilinumero
 player.getSecondaryBank() -- Säästötilillä oleva summa
 player.getSecondAccountNumber() -- Säästötilin tilinumero
-player.setdeathStatus(status) -- 0 = elävä 1 = kuollut
-player.giveGroup(group)
 player.giveBank(amount)
 player.giveSecondaryBank(amount)
+player.removeBank(amount)
+player.removeSecondaryBank(amount)
 
 **Items**
 player.addItem(name, count) -- Itemit sekä aseet
