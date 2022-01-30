@@ -4,18 +4,23 @@
 ```markdown
 local player = exports['cc_base']:GetPlayer(source)
 
-player.getdeathStatus() 
+player.getDeathStatus() 
+player.setDeathStatus(status) -- 0 = elävä 1 = kuollut
 player.getPos() 
-player.getChar() -- Valittu hahmo (1 & 2)
+player.getChar() -- (1 & 2)
 player.getJob() 
-player.giveJob()
+player.giveJob(job, value)
 player.getDuty()
 player.getIdentifier()
 player.getGroup()
 player.getPlayerFirstName()
 player.getPlayerLastName()
+player.getPlayerYear()
+player.getPlayerHealth()
+player.getPlayerArmor()
+player.getPlayerHunger()
+player.getPlayerThirst()
 player.hasItem(item)
-player.setdeathStatus(status) -- 0 = elävä 1 = kuollut
 player.giveGroup(group)
 
 **Currency**
@@ -37,6 +42,7 @@ player.getItemType(item) -- Item or weapon
 player.getItemWeight(item) -- in grams
 player.getItemDurability(item) -- Max durability
 player.isItemUsable(item)
+player.clearItems()
 ```
 
 ### Framework Functions (Callbacks)
