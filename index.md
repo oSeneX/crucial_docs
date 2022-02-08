@@ -2,7 +2,7 @@
 
 ### Framework Functions (Server)
 ```markdown
-local player = exports['cc_base']:GetPlayer(source)
+local player = exports['crucial']:GetPlayer(source)
 
 player.getDeathStatus() 
 player.setDeathStatus(status) --- 0 = elävä 1 = kuollut
@@ -48,31 +48,31 @@ player.clearItems()
 ### Framework Functions (Callbacks)
 ```markdown
 **Client:**
-exports['cc_base']:TriggerServerCallback('eventName', function() 
+exports['crucial']:TriggerServerCallback('eventName', function() 
     
 end)
 
 **Server:**
-exports['cc_base']:RegisterCallback('eventName', function(source, cb) 
+exports['crucial']:RegisterCallback('eventName', function(source, cb) 
     
 end)
 
-exports['cc_base']:RegisterItem('item', function(source, item)
+exports['crucial']:RegisterItem('item', function(source, item)
     print('Item used')
 end)
 ```
 
 ### Framework Modules (Client)
 ```markdown
-exports['cc_modules']:InsertDistNotify(coords, distance, text) -- Ilmoittaa annetun ilmoituksen alueelle saavuttaessa
+exports['crucial_modules']:InsertDistNotify(coords, distance, text) -- Ilmoittaa annetun ilmoituksen alueelle saavuttaessa
 Esimerkki: exports['cc_modules']:InsertDistNotify(vector3(0, 0, 0), 2.5, 'Saavuit alueelle')
 
-exports['cc_modules']:InsertBlip(name, scale, sprite, color, shortrange, coords)
+exports['crucial_modules']:InsertBlip(name, scale, sprite, color, shortrange, coords)
 Esimerkki: exports['cc_modules']:InsertBlip('Kauppa', 0.6, 59, 0, true, v.sij)
 ```
 
 ### Framework Modules (Server)
 ```markdown
-exports['cc_logit']:logToDC(user, title, desc, webhook, color)
-Esimerkki: exports['cc_logit']:logToDC('Yhteydet', 'Yhdistetään...', 'Pelaaja: **'..name..'**\nSteam: **'..steamid..'** \nRockstar License: **'..license..'** \nIP: **'..ip..'\n**Discord: **'..discord..'**', Logs.Yhteydet, 15105570)
+exports['crucial_logs']:logToDC(user, title, desc, webhook, color)
+Esimerkki: exports['crucial_logs']:logToDC('Yhteydet', 'Yhdistetään...', 'Pelaaja: **'..name..'**\nSteam: **'..steamid..'** \nRockstar License: **'..license..'** \nIP: **'..ip..'\n**Discord: **'..discord..'**', Logs.Yhteydet, 15105570)
 ```
