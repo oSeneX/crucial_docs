@@ -7,10 +7,9 @@ local player = exports['crucial']:GetPlayer(source)
 player.getDeathStatus() 
 player.setDeathStatus(status) --- 0 = elävä 1 = kuollut
 player.getPos() 
-player.getChar() --- 1 & 2
-player.getJob() 
+player.getChar()
+player.getJob() -- Return job, rank, duty
 player.giveJob(job, value)
-player.getDuty()
 player.getIdentifier()
 player.getGroup()
 player.getPlayerFirstName()
@@ -21,6 +20,7 @@ player.getPlayerArmor()
 player.getPlayerHunger()
 player.getPlayerThirst()
 player.hasItem(item)
+player.hasItemAmount(item, amount)
 player.giveGroup(group)
 
 **Currency**
@@ -37,12 +37,18 @@ player.removeSecondaryBank(amount)
 player.addItem(name, count) --- Itemit sekä aseet
 player.removeItem(name, count)
 player.weaponAmmo(name, count, val) --- val = true antaa ammuksia, val = false poistaa ammuksia
+player.setweaponAmmo(name, count)
 player.getItemLabel(item)
 player.getItemType(item) --- Item or weapon
 player.getItemWeight(item) --- in grams
 player.getItemDurability(item) --- Max durability
 player.isItemUsable(item)
 player.clearItems()
+
+**Creditscore**
+player.getCreditScore()
+player.giveCreditScore(amount)
+player.removeCreditScore(amount)
 ```
 
 ### Framework Functions (Callbacks)
