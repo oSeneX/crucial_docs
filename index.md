@@ -77,6 +77,10 @@ exports['crucial_modules']:InsertBlip(name, scale, sprite, color, shortrange, co
 Esimerkki: exports['cc_modules']:InsertBlip('Kauppa', 0.6, 59, 0, true, v.sij)
 ```
 
+### Framework Notify (Client)
+exports['crucial_notify']:runNotify(msg, color, time)
+Colors: 1 - basic, 2 - error
+
 ### Framework Modules (Server)
 ```markdown
 exports['crucial_logs']:logToDC(user, title, desc, webhook, color)
