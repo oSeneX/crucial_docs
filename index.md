@@ -36,8 +36,10 @@ player.removeSecondaryBank(amount)
 **Items**
 player.addItem(name, count) --- Itemit sekä aseet
 player.removeItem(name, count)
+player.hasItem(name)
+player.hasItemAmount(name,, count)
 player.weaponAmmo(name, count, val) --- val = true antaa ammuksia, val = false poistaa ammuksia
-player.setweaponAmmo(name, count)
+player.setWeaponAmmo(name, count)
 player.getItemLabel(item)
 player.getItemType(item) --- Item or weapon
 player.getItemWeight(item) --- in grams
