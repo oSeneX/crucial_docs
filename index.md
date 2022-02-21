@@ -76,8 +76,9 @@ exports['crucial_lib']:InsertDistNotify(coords, distance, text) -- Ilmoittaa ann
 
 exports['crucial_lib']:InsertBlip(name, scale, sprite, color, shortrange, coords)
 
-exports['crucial_lib']:runNotify(msg, color, time)
-Colors: 1 - basic, 2 - error
+exports['crucial_lib']:runNotify(msg, color, time) -- Colors: 1 - basic, 2 - error
+
+exports['crucial_lib']:runProgress(msg, time)
 ```
 
 ### Framework Modules (Server)
