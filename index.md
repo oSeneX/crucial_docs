@@ -70,18 +70,13 @@ exports['crucial']:RegisterItem('item', function(source, item)
 end)
 ```
 
-### Framework Modules (Client)
+### Framework Library (Client)
 ```markdown
-exports['crucial_modules']:InsertDistNotify(coords, distance, text) -- Ilmoittaa annetun ilmoituksen alueelle saavuttaessa
-Esimerkki: exports['cc_modules']:InsertDistNotify(vector3(0, 0, 0), 2.5, 'Saavuit alueelle')
+exports['crucial_lib']:InsertDistNotify(coords, distance, text) -- Ilmoittaa annetun ilmoituksen alueelle saavuttaessa
 
-exports['crucial_modules']:InsertBlip(name, scale, sprite, color, shortrange, coords)
-Esimerkki: exports['cc_modules']:InsertBlip('Kauppa', 0.6, 59, 0, true, v.sij)
-```
+exports['crucial_lib']:InsertBlip(name, scale, sprite, color, shortrange, coords)
 
-### Framework Notify (Client)
-```markdown
-exports['crucial_notify']:runNotify(msg, color, time)
+exports['crucial_lib']:runNotify(msg, color, time)
 Colors: 1 - basic, 2 - error
 ```
 
