@@ -72,7 +72,7 @@ end)
 
 ### Framework Library (Client)
 ```markdown
-exports['crucial_lib']:InsertDistNotify(coords, distance, text) -- Ilmoittaa annetun ilmoituksen alueelle saavuttaessa
+exports['crucial_lib']:InsertDistNotify(coords, distance, text, exittext) -- Ilmoittaa annetun ilmoituksen alueelle saavuttaessa
 
 exports['crucial_lib']:InsertBlip(name, scale, sprite, color, shortrange, coords)
 
