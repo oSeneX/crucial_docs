@@ -81,8 +81,8 @@ exports['crucial_lib']:runNotify(msg, color, time) -- Colors: 1 - basic, 2 - err
 exports['crucial_lib']:runProgress(msg, time)
 ```
 
-### Framework Modules (Server)
+### Framework Library (Server)
 ```markdown
-exports['crucial_logs']:logToDC(user, title, desc, webhook, color)
-Esimerkki: exports['crucial_logs']:logToDC('Yhteydet', 'Yhdistetään...', 'Pelaaja: **'..name..'**\nSteam: **'..steamid..'** \nRockstar License: **'..license..'** \nIP: **'..ip..'\n**Discord: **'..discord..'**', Logs.Yhteydet, 15105570)
+exports['crucial_lib']:logToDC(source, user, title, additional, webhooknum, color)
+Esimerkki: exports['crucial_lib']:logToDC(source, 'Yhteydet', 'Yhdistetään...', '', 1, 15105570)
 ```
