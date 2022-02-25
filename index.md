@@ -84,5 +84,4 @@ exports['crucial_lib']:runProgress(msg, time)
 ### Framework Library (Server)
 ```markdown
 exports['crucial_lib']:logToDC(source, user, title, additional, webhooknum, color)
-Esimerkki: exports['crucial_lib']:logToDC(source, 'Yhteydet', 'Yhdistetään...', '', 1, 15105570)
 ```
