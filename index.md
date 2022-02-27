@@ -37,7 +37,8 @@ player.removeSecondaryBank(amount)
 player.addItem(name, count) --- Itemit sekä aseet
 player.removeItem(name, count)
 player.hasItem(name)
-player.hasItemAmount(name,, count)
+player.hasItemAmount(name, count)
+player.canCarry(name, count)
 player.weaponAmmo(name, count, val) --- val = true antaa ammuksia, val = false poistaa ammuksia
 player.setWeaponAmmo(name, count)
 player.getItemLabel(item)
